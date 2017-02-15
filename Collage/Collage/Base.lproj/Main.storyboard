@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="LPh-CP-Ayu">
             <objects>
-                <navigationController id="24X-sX-CA5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="24X-sX-CA5" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nwa-sg-fPA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-883" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Collage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LandingViewController" customModule="Collage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,28 +40,41 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="e28-ma-nOg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQD-rb-KzX">
+                                <rect key="frame" x="109" y="324" width="101" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ojs-GM-b5F"/>
+                                    <constraint firstAttribute="width" constant="101" id="yp0-LN-MMC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Start Collage">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NmQ-Qn-agy" kind="show" identifier="CollageSegue" id="0CO-ed-i6W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vQD-rb-KzX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDa-6w-p69"/>
                             <constraint firstAttribute="trailing" secondItem="e28-ma-nOg" secondAttribute="trailing" id="JTs-fb-iZm"/>
+                            <constraint firstItem="vQD-rb-KzX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="58" id="Rmh-XI-bYR"/>
                             <constraint firstItem="e28-ma-nOg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SSx-ZG-Xnw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e28-ma-nOg" secondAttribute="bottom" id="ame-zf-1bq"/>
                             <constraint firstItem="e28-ma-nOg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cVd-fd-yIn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i45-RI-G9E"/>
-                    <connections>
-                        <segue destination="NmQ-Qn-agy" kind="show" identifier="CollageSegue" id="Ieh-9j-eOj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-187.5" y="136.26760563380282"/>
         </scene>
-        <!--View Controller-->
+        <!--Collage View Controller-->
         <scene sceneID="o3o-sm-2eK">
             <objects>
-                <viewController id="NmQ-Qn-agy" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NmQ-Qn-agy" customClass="CollageViewController" customModule="Collage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AUf-TI-jcl"/>
                         <viewControllerLayoutGuide type="bottom" id="R0o-9m-FVl"/>
@@ -73,9 +86,18 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9md-cd-w1D">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xxb-Dv-hPp">
+                                <rect key="frame" x="93" y="511" width="134" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="jU9-3g-rbj"/>
+                                    <constraint firstAttribute="width" constant="134" id="u2v-9f-kwJ"/>
+                                </constraints>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Xxb-Dv-hPp" firstAttribute="centerX" secondItem="9md-cd-w1D" secondAttribute="centerX" id="2cw-t8-U9v"/>
+                            <constraint firstItem="R0o-9m-FVl" firstAttribute="top" secondItem="Xxb-Dv-hPp" secondAttribute="bottom" constant="20" id="9aP-a8-A2u"/>
                             <constraint firstAttribute="trailing" secondItem="9md-cd-w1D" secondAttribute="trailing" id="WhX-Fs-0oz"/>
                             <constraint firstItem="R0o-9m-FVl" firstAttribute="top" secondItem="9md-cd-w1D" secondAttribute="bottom" id="eE5-Xu-aLd"/>
                             <constraint firstItem="9md-cd-w1D" firstAttribute="leading" secondItem="v8b-2x-vWD" secondAttribute="leading" id="fHa-DL-1FY"/>
@@ -83,6 +105,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collageScrollView" destination="9md-cd-w1D" id="EqX-Kq-G6U"/>
+                        <outlet property="pageControl" destination="Xxb-Dv-hPp" id="ItE-O1-4gi"/>
                         <segue destination="doS-Ii-dAK" kind="show" identifier="PhotoCollectionSegue" id="YGS-MT-DPF"/>
                     </connections>
                 </viewController>
@@ -90,11 +114,11 @@
             </objects>
             <point key="canvasLocation" x="564.375" y="141.5492957746479"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Collage Collection View Controller-->
         <scene sceneID="WTy-pC-gYF">
             <objects>
-                <collectionViewController id="doS-Ii-dAK" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="JDC-zx-Ev7">
+                <collectionViewController id="doS-Ii-dAK" customClass="CollageCollectionViewController" customModule="Collage" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="JDC-zx-Ev7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,7 +129,7 @@
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotosCollectionViewCell" id="Iiu-LI-mEq" customClass="PhotosCollectionViewCell" customModule="Filters" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotosCollectionViewCell" id="Iiu-LI-mEq" customClass="PhotosCollectionViewCell" customModule="Collage" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -179,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="1301" y="151"/>
         </scene>
-        <!--View Controller-->
+        <!--Collage Filter View Controller-->
         <scene sceneID="BnC-WR-kOD">
             <objects>
-                <viewController id="Yhq-V6-XIE" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Yhq-V6-XIE" customClass="CollageFilterViewController" customModule="Collage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NTv-qi-Jp1"/>
                         <viewControllerLayoutGuide type="bottom" id="cIX-5S-axY"/>
@@ -190,12 +214,27 @@
                     <view key="view" contentMode="scaleToFill" id="ZKF-IM-qdo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRZ-QN-1CE">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MRZ-QN-1CE" firstAttribute="top" secondItem="NTv-qi-Jp1" secondAttribute="bottom" id="2b2-sr-vTO"/>
+                            <constraint firstItem="MRZ-QN-1CE" firstAttribute="leading" secondItem="ZKF-IM-qdo" secondAttribute="leading" id="EZj-kt-OYc"/>
+                            <constraint firstItem="cIX-5S-axY" firstAttribute="top" secondItem="MRZ-QN-1CE" secondAttribute="bottom" id="Plq-vD-3ab"/>
+                            <constraint firstAttribute="trailing" secondItem="MRZ-QN-1CE" secondAttribute="trailing" id="zmp-x3-gbl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="MRZ-QN-1CE" id="MOd-Dp-wxg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmf-cN-Cwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2194" y="152"/>
+            <point key="canvasLocation" x="2193.75" y="151.05633802816902"/>
         </scene>
     </scenes>
     <resources>

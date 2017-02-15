@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		0DD1B3850F5B93E2B27347D9 /* Pods_Collage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC54B70EB79415FE1E98DBE /* Pods_Collage.framework */; };
 		44E6E08C1E5424A0003DCAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E08B1E5424A0003DCAF4 /* AppDelegate.swift */; };
-		44E6E08E1E5424A0003DCAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E08D1E5424A0003DCAF4 /* ViewController.swift */; };
+		44E6E08E1E5424A0003DCAF4 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E08D1E5424A0003DCAF4 /* LandingViewController.swift */; };
 		44E6E0911E5424A0003DCAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E08F1E5424A0003DCAF4 /* Main.storyboard */; };
 		44E6E0931E5424A0003DCAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0921E5424A0003DCAF4 /* Assets.xcassets */; };
 		44E6E0961E5424A0003DCAF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0941E5424A0003DCAF4 /* LaunchScreen.storyboard */; };
+		44E6E09F1E542A0D003DCAF4 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E09E1E542A0D003DCAF4 /* PhotosCollectionViewCell.swift */; };
+		44E6E0A31E542A51003DCAF4 /* CollageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E0A21E542A51003DCAF4 /* CollageCollectionViewController.swift */; };
+		44E6E0A51E542A94003DCAF4 /* CollageFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E0A41E542A94003DCAF4 /* CollageFilterViewController.swift */; };
+		44E6E0A71E542B55003DCAF4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E0A61E542B55003DCAF4 /* Helper.swift */; };
+		44E6E0A91E542B8B003DCAF4 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0A81E542B8B003DCAF4 /* sample.jpg */; };
+		44E6E0AF1E542BA1003DCAF4 /* CollageType1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0AA1E542BA1003DCAF4 /* CollageType1.xib */; };
+		44E6E0B01E542BA1003DCAF4 /* CollageType2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0AB1E542BA1003DCAF4 /* CollageType2.xib */; };
+		44E6E0B11E542BA1003DCAF4 /* CollageType3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0AC1E542BA1003DCAF4 /* CollageType3.xib */; };
+		44E6E0B21E542BA1003DCAF4 /* CollageType4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0AD1E542BA1003DCAF4 /* CollageType4.xib */; };
+		44E6E0B31E542BA1003DCAF4 /* CollageType5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E6E0AE1E542BA1003DCAF4 /* CollageType5.xib */; };
+		44E6E0B51E542C13003DCAF4 /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6E0B41E542C13003DCAF4 /* CollageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		320C189F136DF4A6589FACB2 /* Pods-Collage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collage/Pods-Collage.release.xcconfig"; sourceTree = "<group>"; };
 		44E6E0881E5424A0003DCAF4 /* Collage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E6E08B1E5424A0003DCAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44E6E08D1E5424A0003DCAF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44E6E08D1E5424A0003DCAF4 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		44E6E0901E5424A0003DCAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44E6E0921E5424A0003DCAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44E6E0951E5424A0003DCAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44E6E0971E5424A0003DCAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E6E09E1E542A0D003DCAF4 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		44E6E0A21E542A51003DCAF4 /* CollageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageCollectionViewController.swift; sourceTree = "<group>"; };
+		44E6E0A41E542A94003DCAF4 /* CollageFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageFilterViewController.swift; sourceTree = "<group>"; };
+		44E6E0A61E542B55003DCAF4 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		44E6E0A81E542B8B003DCAF4 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
+		44E6E0AA1E542BA1003DCAF4 /* CollageType1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollageType1.xib; sourceTree = "<group>"; };
+		44E6E0AB1E542BA1003DCAF4 /* CollageType2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollageType2.xib; sourceTree = "<group>"; };
+		44E6E0AC1E542BA1003DCAF4 /* CollageType3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollageType3.xib; sourceTree = "<group>"; };
+		44E6E0AD1E542BA1003DCAF4 /* CollageType4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollageType4.xib; sourceTree = "<group>"; };
+		44E6E0AE1E542BA1003DCAF4 /* CollageType5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollageType5.xib; sourceTree = "<group>"; };
+		44E6E0B41E542C13003DCAF4 /* CollageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
 		ABC54B70EB79415FE1E98DBE /* Pods_Collage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F846D1C0D42A02EEA1E1A36F /* Pods-Collage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Collage/Pods-Collage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,14 +92,41 @@
 		44E6E08A1E5424A0003DCAF4 /* Collage */ = {
 			isa = PBXGroup;
 			children = (
+				44E6E0A81E542B8B003DCAF4 /* sample.jpg */,
+				44E6E0A11E542A3F003DCAF4 /* Controllers */,
+				44E6E09D1E542A03003DCAF4 /* Views */,
 				44E6E08B1E5424A0003DCAF4 /* AppDelegate.swift */,
-				44E6E08D1E5424A0003DCAF4 /* ViewController.swift */,
+				44E6E0A61E542B55003DCAF4 /* Helper.swift */,
 				44E6E08F1E5424A0003DCAF4 /* Main.storyboard */,
 				44E6E0921E5424A0003DCAF4 /* Assets.xcassets */,
 				44E6E0941E5424A0003DCAF4 /* LaunchScreen.storyboard */,
 				44E6E0971E5424A0003DCAF4 /* Info.plist */,
 			);
 			path = Collage;
+			sourceTree = "<group>";
+		};
+		44E6E09D1E542A03003DCAF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44E6E0AA1E542BA1003DCAF4 /* CollageType1.xib */,
+				44E6E0AB1E542BA1003DCAF4 /* CollageType2.xib */,
+				44E6E0AC1E542BA1003DCAF4 /* CollageType3.xib */,
+				44E6E0AD1E542BA1003DCAF4 /* CollageType4.xib */,
+				44E6E0AE1E542BA1003DCAF4 /* CollageType5.xib */,
+				44E6E09E1E542A0D003DCAF4 /* PhotosCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		44E6E0A11E542A3F003DCAF4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44E6E08D1E5424A0003DCAF4 /* LandingViewController.swift */,
+				44E6E0A21E542A51003DCAF4 /* CollageCollectionViewController.swift */,
+				44E6E0A41E542A94003DCAF4 /* CollageFilterViewController.swift */,
+				44E6E0B41E542C13003DCAF4 /* CollageViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		F0846E14E6DC5D7669F1DC9C /* Frameworks */ = {
@@ -123,8 +172,8 @@
 				TargetAttributes = {
 					44E6E0871E5424A0003DCAF4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 65RURZ9MG8;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2T4GPBYKK8;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -151,9 +200,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E6E0B31E542BA1003DCAF4 /* CollageType5.xib in Resources */,
+				44E6E0B01E542BA1003DCAF4 /* CollageType2.xib in Resources */,
+				44E6E0AF1E542BA1003DCAF4 /* CollageType1.xib in Resources */,
 				44E6E0961E5424A0003DCAF4 /* LaunchScreen.storyboard in Resources */,
 				44E6E0931E5424A0003DCAF4 /* Assets.xcassets in Resources */,
 				44E6E0911E5424A0003DCAF4 /* Main.storyboard in Resources */,
+				44E6E0A91E542B8B003DCAF4 /* sample.jpg in Resources */,
+				44E6E0B21E542BA1003DCAF4 /* CollageType4.xib in Resources */,
+				44E6E0B11E542BA1003DCAF4 /* CollageType3.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E6E08E1E5424A0003DCAF4 /* ViewController.swift in Sources */,
+				44E6E08E1E5424A0003DCAF4 /* LandingViewController.swift in Sources */,
 				44E6E08C1E5424A0003DCAF4 /* AppDelegate.swift in Sources */,
+				44E6E0A51E542A94003DCAF4 /* CollageFilterViewController.swift in Sources */,
+				44E6E0A31E542A51003DCAF4 /* CollageCollectionViewController.swift in Sources */,
+				44E6E09F1E542A0D003DCAF4 /* PhotosCollectionViewCell.swift in Sources */,
+				44E6E0B51E542C13003DCAF4 /* CollageViewController.swift in Sources */,
+				44E6E0A71E542B55003DCAF4 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +395,14 @@
 			baseConfigurationReference = F846D1C0D42A02EEA1E1A36F /* Pods-Collage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 65RURZ9MG8;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Soham Bhattacharjee (Q32T8QSE7N)";
+				DEVELOPMENT_TEAM = 2T4GPBYKK8;
 				INFOPLIST_FILE = Collage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.soham.Collage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodlion.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "744aa24a-7360-4704-8e9a-7badcdcfb112";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardFoodLion;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -349,11 +412,14 @@
 			baseConfigurationReference = 320C189F136DF4A6589FACB2 /* Pods-Collage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 65RURZ9MG8;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Soham Bhattacharjee (Q32T8QSE7N)";
+				DEVELOPMENT_TEAM = 2T4GPBYKK8;
 				INFOPLIST_FILE = Collage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.soham.Collage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodlion.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "744aa24a-7360-4704-8e9a-7badcdcfb112";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardFoodLion;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -377,6 +443,7 @@
 				44E6E09C1E5424A0003DCAF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

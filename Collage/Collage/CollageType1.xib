@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollageView" customModule="Filters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3A-ZW-yUl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-em-QNS" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QcL-em-QNS" secondAttribute="trailing" id="Ezf-4g-gFX"/>
+                        <constraint firstItem="QcL-em-QNS" firstAttribute="top" secondItem="h3A-ZW-yUl" secondAttribute="top" id="LIy-OO-NM3"/>
+                        <constraint firstItem="QcL-em-QNS" firstAttribute="leading" secondItem="h3A-ZW-yUl" secondAttribute="leading" id="VGZ-m5-qHQ"/>
+                        <constraint firstAttribute="bottom" secondItem="QcL-em-QNS" secondAttribute="bottom" id="ah5-rn-J6n"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfn-VU-HaK">
+                    <rect key="frame" x="0.0" y="224" width="414" height="224"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kp-B8-UWw">
+                            <rect key="frame" x="0.0" y="0.0" width="167" height="224"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LCj-5U-K2P" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="167" height="224"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="LCj-5U-K2P" secondAttribute="bottom" id="DxH-7e-yYc"/>
+                                <constraint firstItem="LCj-5U-K2P" firstAttribute="leading" secondItem="3kp-B8-UWw" secondAttribute="leading" id="JO4-bY-A1u"/>
+                                <constraint firstAttribute="trailing" secondItem="LCj-5U-K2P" secondAttribute="trailing" id="czh-yR-R1X"/>
+                                <constraint firstItem="LCj-5U-K2P" firstAttribute="top" secondItem="3kp-B8-UWw" secondAttribute="top" id="hwU-7l-xAp"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drd-ig-Fg7">
+                            <rect key="frame" x="167" y="0.0" width="107" height="224"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-Mr-D1S" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="107" height="112"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SnZ-JX-bf4" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="112" width="107" height="112"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="SnZ-JX-bf4" secondAttribute="trailing" id="22O-bx-oZM"/>
+                                <constraint firstAttribute="trailing" secondItem="jiZ-Mr-D1S" secondAttribute="trailing" id="9Ze-gI-Ubi"/>
+                                <constraint firstItem="SnZ-JX-bf4" firstAttribute="height" secondItem="jiZ-Mr-D1S" secondAttribute="height" id="OKa-GR-tGo"/>
+                                <constraint firstItem="jiZ-Mr-D1S" firstAttribute="top" secondItem="drd-ig-Fg7" secondAttribute="top" id="Q5u-yk-109"/>
+                                <constraint firstItem="SnZ-JX-bf4" firstAttribute="leading" secondItem="drd-ig-Fg7" secondAttribute="leading" id="eBr-EK-tgA"/>
+                                <constraint firstItem="jiZ-Mr-D1S" firstAttribute="leading" secondItem="drd-ig-Fg7" secondAttribute="leading" id="iKh-Ks-gUc"/>
+                                <constraint firstItem="SnZ-JX-bf4" firstAttribute="top" secondItem="jiZ-Mr-D1S" secondAttribute="bottom" id="m6o-su-pt2"/>
+                                <constraint firstAttribute="bottom" secondItem="SnZ-JX-bf4" secondAttribute="bottom" id="rRR-kO-QoG"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmA-Z6-9TB">
+                            <rect key="frame" x="274" y="0.0" width="140" height="224"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2WO-3m-3bN" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="224"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="2WO-3m-3bN" secondAttribute="bottom" id="8US-pq-BAm"/>
+                                <constraint firstItem="2WO-3m-3bN" firstAttribute="top" secondItem="qmA-Z6-9TB" secondAttribute="top" id="Ufv-pI-oYj"/>
+                                <constraint firstAttribute="trailing" secondItem="2WO-3m-3bN" secondAttribute="trailing" id="cwK-IP-Xls"/>
+                                <constraint firstItem="2WO-3m-3bN" firstAttribute="leading" secondItem="qmA-Z6-9TB" secondAttribute="leading" id="lpH-fH-T7Q"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="drd-ig-Fg7" secondAttribute="bottom" id="7By-TQ-NsI"/>
+                        <constraint firstItem="3kp-B8-UWw" firstAttribute="top" secondItem="Lfn-VU-HaK" secondAttribute="top" id="C08-sN-BSg"/>
+                        <constraint firstItem="drd-ig-Fg7" firstAttribute="leading" secondItem="3kp-B8-UWw" secondAttribute="trailing" id="Dz7-Iq-Ubv"/>
+                        <constraint firstItem="drd-ig-Fg7" firstAttribute="width" secondItem="3kp-B8-UWw" secondAttribute="width" constant="-60" id="Mcw-zj-jtL"/>
+                        <constraint firstItem="drd-ig-Fg7" firstAttribute="top" secondItem="Lfn-VU-HaK" secondAttribute="top" id="QgC-CZ-BCr"/>
+                        <constraint firstItem="qmA-Z6-9TB" firstAttribute="top" secondItem="Lfn-VU-HaK" secondAttribute="top" id="Uss-1R-1qi"/>
+                        <constraint firstAttribute="bottom" secondItem="3kp-B8-UWw" secondAttribute="bottom" id="ZgT-NT-9IX"/>
+                        <constraint firstAttribute="trailing" secondItem="qmA-Z6-9TB" secondAttribute="trailing" id="dIf-uu-EBh"/>
+                        <constraint firstItem="qmA-Z6-9TB" firstAttribute="height" secondItem="3kp-B8-UWw" secondAttribute="height" id="dZG-GU-DQO"/>
+                        <constraint firstItem="drd-ig-Fg7" firstAttribute="height" secondItem="3kp-B8-UWw" secondAttribute="height" id="hSH-ln-g9L"/>
+                        <constraint firstItem="3kp-B8-UWw" firstAttribute="leading" secondItem="Lfn-VU-HaK" secondAttribute="leading" id="hUA-Nf-Ozc"/>
+                        <constraint firstAttribute="bottom" secondItem="qmA-Z6-9TB" secondAttribute="bottom" id="iRz-i2-LfJ"/>
+                        <constraint firstItem="qmA-Z6-9TB" firstAttribute="width" secondItem="3kp-B8-UWw" secondAttribute="width" constant="-27" id="oG1-Sl-7si"/>
+                        <constraint firstItem="qmA-Z6-9TB" firstAttribute="leading" secondItem="drd-ig-Fg7" secondAttribute="trailing" id="tvB-xa-gKP"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLc-og-3dM">
+                    <rect key="frame" x="0.0" y="448" width="414" height="224"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QwU-Wz-hfy" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.2810463467" blue="0.17480278939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QwU-Wz-hfy" secondAttribute="bottom" id="Qtg-b2-VEY"/>
+                        <constraint firstAttribute="trailing" secondItem="QwU-Wz-hfy" secondAttribute="trailing" id="liP-eS-t2W"/>
+                        <constraint firstItem="QwU-Wz-hfy" firstAttribute="top" secondItem="WLc-og-3dM" secondAttribute="top" id="pNA-nh-SXa"/>
+                        <constraint firstItem="QwU-Wz-hfy" firstAttribute="leading" secondItem="WLc-og-3dM" secondAttribute="leading" id="pgc-6X-Fvn"/>
+                    </constraints>
+                </view>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7b-Gz-PX8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="y3A-O9-gqn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="YfB-o0-ms9">
+                                <rect key="frame" x="157" y="286" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Mqi-Pr-VJa"/>
+                                    <constraint firstAttribute="height" constant="100" id="aKP-a7-sbo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YfB-o0-ms9" firstAttribute="centerY" secondItem="y3A-O9-gqn" secondAttribute="centerY" id="49G-mh-xoM"/>
+                            <constraint firstItem="YfB-o0-ms9" firstAttribute="centerX" secondItem="y3A-O9-gqn" secondAttribute="centerX" id="GS9-a0-DXC"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-uF-XPx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <connections>
+                        <action selector="onClickSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="LGA-vf-7Xl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B7b-Gz-PX8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3PU-9c-95M"/>
+                <constraint firstAttribute="trailing" secondItem="WLc-og-3dM" secondAttribute="trailing" id="57a-6D-fCH"/>
+                <constraint firstItem="cO5-uF-XPx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9bo-QN-j7w"/>
+                <constraint firstItem="B7b-Gz-PX8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CHp-9L-zfO"/>
+                <constraint firstItem="WLc-og-3dM" firstAttribute="height" secondItem="h3A-ZW-yUl" secondAttribute="height" id="Ljm-ax-GiU"/>
+                <constraint firstItem="h3A-ZW-yUl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XkP-6v-uNP"/>
+                <constraint firstAttribute="trailing" secondItem="B7b-Gz-PX8" secondAttribute="trailing" id="YaF-dy-Vu4"/>
+                <constraint firstItem="cO5-uF-XPx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yu7-Ap-ibD"/>
+                <constraint firstItem="Lfn-VU-HaK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dze-6Q-8du"/>
+                <constraint firstItem="WLc-og-3dM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fkM-CI-cff"/>
+                <constraint firstItem="h3A-ZW-yUl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gAf-Ca-yIu"/>
+                <constraint firstItem="WLc-og-3dM" firstAttribute="top" secondItem="Lfn-VU-HaK" secondAttribute="bottom" id="gDH-kz-zXB"/>
+                <constraint firstAttribute="trailing" secondItem="h3A-ZW-yUl" secondAttribute="trailing" id="iHK-JI-F4c"/>
+                <constraint firstAttribute="trailing" secondItem="Lfn-VU-HaK" secondAttribute="trailing" id="jy5-Xi-nEs"/>
+                <constraint firstItem="Lfn-VU-HaK" firstAttribute="height" secondItem="h3A-ZW-yUl" secondAttribute="height" id="kBN-2G-NBS"/>
+                <constraint firstAttribute="bottom" secondItem="cO5-uF-XPx" secondAttribute="bottom" id="lyZ-Dh-whB"/>
+                <constraint firstAttribute="bottom" secondItem="B7b-Gz-PX8" secondAttribute="bottom" id="r9S-T1-vmZ"/>
+                <constraint firstAttribute="bottom" secondItem="WLc-og-3dM" secondAttribute="bottom" id="u7R-HL-sMZ"/>
+                <constraint firstItem="Lfn-VU-HaK" firstAttribute="top" secondItem="h3A-ZW-yUl" secondAttribute="bottom" id="wWs-FM-0sd"/>
+                <constraint firstAttribute="trailing" secondItem="cO5-uF-XPx" secondAttribute="trailing" id="xLu-IZ-hTd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="collageType">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="blurView" destination="B7b-Gz-PX8" id="Sg0-jZ-F2M"/>
+                <outlet property="btnClick" destination="cO5-uF-XPx" id="jAO-Uv-e41"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample.jpg" width="2560" height="1600"/>
+        <image name="tick" width="128" height="128"/>
+    </resources>
+</document>

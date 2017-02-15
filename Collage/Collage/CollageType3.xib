@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="t3t-Qq-UGe" customClass="CollageView" customModule="Filters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MHD-Cq-8jt" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="138" height="672"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IL2-vX-1QE" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                    <rect key="frame" x="138" y="0.0" width="138" height="672"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gU5-Wh-g25" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                    <rect key="frame" x="276" y="0.0" width="138" height="672"/>
+                </imageView>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHh-yL-CFc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HXQ-Vb-lNg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="Y8c-6O-JKN">
+                                <rect key="frame" x="157" y="286" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dvw-Xj-0W5"/>
+                                    <constraint firstAttribute="width" constant="100" id="eOg-9H-lw8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Y8c-6O-JKN" firstAttribute="centerX" secondItem="HXQ-Vb-lNg" secondAttribute="centerX" id="IDo-DC-fPq"/>
+                            <constraint firstItem="Y8c-6O-JKN" firstAttribute="centerY" secondItem="HXQ-Vb-lNg" secondAttribute="centerY" id="cyi-xV-M6H"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGa-rw-jDg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <connections>
+                        <action selector="onClickSelect:" destination="t3t-Qq-UGe" eventType="touchUpInside" id="mLB-wW-dos"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MHD-Cq-8jt" secondAttribute="bottom" id="1fN-hv-FWv"/>
+                <constraint firstAttribute="bottom" secondItem="IL2-vX-1QE" secondAttribute="bottom" id="3bO-fe-PnB"/>
+                <constraint firstItem="gU5-Wh-g25" firstAttribute="width" secondItem="MHD-Cq-8jt" secondAttribute="width" id="3bf-sG-knS"/>
+                <constraint firstItem="iGa-rw-jDg" firstAttribute="leading" secondItem="t3t-Qq-UGe" secondAttribute="leading" id="704-UA-0iX"/>
+                <constraint firstItem="iGa-rw-jDg" firstAttribute="top" secondItem="t3t-Qq-UGe" secondAttribute="top" id="7Gr-EE-b2A"/>
+                <constraint firstItem="IL2-vX-1QE" firstAttribute="leading" secondItem="MHD-Cq-8jt" secondAttribute="trailing" id="ESg-bC-NrZ"/>
+                <constraint firstItem="gU5-Wh-g25" firstAttribute="leading" secondItem="IL2-vX-1QE" secondAttribute="trailing" id="Hs3-Bh-7lE"/>
+                <constraint firstItem="gU5-Wh-g25" firstAttribute="top" secondItem="t3t-Qq-UGe" secondAttribute="top" id="Lvt-5L-eKV"/>
+                <constraint firstAttribute="bottom" secondItem="iGa-rw-jDg" secondAttribute="bottom" id="OZl-Vx-0yc"/>
+                <constraint firstItem="IL2-vX-1QE" firstAttribute="height" secondItem="MHD-Cq-8jt" secondAttribute="height" id="V2A-6q-bMM"/>
+                <constraint firstItem="MHD-Cq-8jt" firstAttribute="top" secondItem="t3t-Qq-UGe" secondAttribute="top" id="bGp-81-bmC"/>
+                <constraint firstAttribute="trailing" secondItem="gU5-Wh-g25" secondAttribute="trailing" id="c6f-FM-XA1"/>
+                <constraint firstAttribute="trailing" secondItem="iGa-rw-jDg" secondAttribute="trailing" id="cUG-g1-wOi"/>
+                <constraint firstItem="gU5-Wh-g25" firstAttribute="height" secondItem="MHD-Cq-8jt" secondAttribute="height" id="hOt-Zl-5Jx"/>
+                <constraint firstItem="IHh-yL-CFc" firstAttribute="top" secondItem="t3t-Qq-UGe" secondAttribute="top" id="iEq-0d-4V8"/>
+                <constraint firstAttribute="bottom" secondItem="gU5-Wh-g25" secondAttribute="bottom" id="jH0-zD-RLP"/>
+                <constraint firstAttribute="trailing" secondItem="IHh-yL-CFc" secondAttribute="trailing" id="n85-CV-z7l"/>
+                <constraint firstAttribute="bottom" secondItem="IHh-yL-CFc" secondAttribute="bottom" id="nke-Q9-aIE"/>
+                <constraint firstItem="MHD-Cq-8jt" firstAttribute="leading" secondItem="t3t-Qq-UGe" secondAttribute="leading" id="p3P-PL-899"/>
+                <constraint firstItem="IL2-vX-1QE" firstAttribute="width" secondItem="MHD-Cq-8jt" secondAttribute="width" id="svl-eb-omF"/>
+                <constraint firstItem="IHh-yL-CFc" firstAttribute="leading" secondItem="t3t-Qq-UGe" secondAttribute="leading" id="vOz-Hc-UyI"/>
+                <constraint firstItem="IL2-vX-1QE" firstAttribute="top" secondItem="t3t-Qq-UGe" secondAttribute="top" id="x4u-mv-aSZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="collageType">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="blurView" destination="IHh-yL-CFc" id="Kch-gz-V34"/>
+                <outlet property="btnClick" destination="iGa-rw-jDg" id="I5q-1M-CVp"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample.jpg" width="2560" height="1600"/>
+        <image name="tick" width="128" height="128"/>
+    </resources>
+</document>

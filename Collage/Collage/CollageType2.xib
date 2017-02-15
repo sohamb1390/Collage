@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KzJ-QJ-3yL" customClass="CollageView" customModule="Filters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LcR-GP-sxj" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DdO-ck-eC9" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="224" width="414" height="224"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PkF-2S-2en" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="448" width="414" height="224"/>
+                </imageView>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwH-VL-t71">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hpV-nV-0VO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="fsG-yp-7uN">
+                                <rect key="frame" x="157" y="286" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8H4-Pa-999"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zug-TM-dAn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fsG-yp-7uN" firstAttribute="centerY" secondItem="hpV-nV-0VO" secondAttribute="centerY" id="oNH-EH-z42"/>
+                            <constraint firstItem="fsG-yp-7uN" firstAttribute="centerX" secondItem="hpV-nV-0VO" secondAttribute="centerX" id="pb0-rX-rBC"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hh-vx-noi">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <connections>
+                        <action selector="onClickSelect:" destination="KzJ-QJ-3yL" eventType="touchUpInside" id="JbB-Wt-IY7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7Hh-vx-noi" secondAttribute="trailing" id="2SL-6Y-VSD"/>
+                <constraint firstItem="gwH-VL-t71" firstAttribute="leading" secondItem="KzJ-QJ-3yL" secondAttribute="leading" id="9nr-3k-VAN"/>
+                <constraint firstItem="7Hh-vx-noi" firstAttribute="leading" secondItem="KzJ-QJ-3yL" secondAttribute="leading" id="DAt-6T-4DT"/>
+                <constraint firstAttribute="trailing" secondItem="LcR-GP-sxj" secondAttribute="trailing" id="JHt-w9-Zvc"/>
+                <constraint firstAttribute="trailing" secondItem="gwH-VL-t71" secondAttribute="trailing" id="KJN-aK-9Cz"/>
+                <constraint firstItem="LcR-GP-sxj" firstAttribute="top" secondItem="KzJ-QJ-3yL" secondAttribute="top" id="LnT-rm-aNK"/>
+                <constraint firstAttribute="bottom" secondItem="gwH-VL-t71" secondAttribute="bottom" id="Nhb-6q-QKU"/>
+                <constraint firstAttribute="trailing" secondItem="DdO-ck-eC9" secondAttribute="trailing" id="PIg-ue-4AE"/>
+                <constraint firstItem="DdO-ck-eC9" firstAttribute="leading" secondItem="KzJ-QJ-3yL" secondAttribute="leading" id="fIB-tx-Gcm"/>
+                <constraint firstItem="PkF-2S-2en" firstAttribute="top" secondItem="DdO-ck-eC9" secondAttribute="bottom" id="jY3-sp-VK9"/>
+                <constraint firstItem="gwH-VL-t71" firstAttribute="top" secondItem="KzJ-QJ-3yL" secondAttribute="top" id="mx1-Ep-Faf"/>
+                <constraint firstAttribute="trailing" secondItem="PkF-2S-2en" secondAttribute="trailing" id="ouh-tf-8Hh"/>
+                <constraint firstItem="DdO-ck-eC9" firstAttribute="height" secondItem="LcR-GP-sxj" secondAttribute="height" id="qV2-BK-OIc"/>
+                <constraint firstItem="PkF-2S-2en" firstAttribute="height" secondItem="LcR-GP-sxj" secondAttribute="height" id="uDn-Gc-ayc"/>
+                <constraint firstItem="DdO-ck-eC9" firstAttribute="top" secondItem="LcR-GP-sxj" secondAttribute="bottom" id="urE-tV-1fh"/>
+                <constraint firstAttribute="bottom" secondItem="7Hh-vx-noi" secondAttribute="bottom" id="vJU-d4-fZR"/>
+                <constraint firstAttribute="bottom" secondItem="PkF-2S-2en" secondAttribute="bottom" id="wAl-C7-sn5"/>
+                <constraint firstItem="LcR-GP-sxj" firstAttribute="leading" secondItem="KzJ-QJ-3yL" secondAttribute="leading" id="wMf-zq-0BH"/>
+                <constraint firstItem="7Hh-vx-noi" firstAttribute="top" secondItem="KzJ-QJ-3yL" secondAttribute="top" id="xFt-CQ-YzI"/>
+                <constraint firstItem="PkF-2S-2en" firstAttribute="leading" secondItem="KzJ-QJ-3yL" secondAttribute="leading" id="zQS-jv-HHW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="collageType">
+                    <integer key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="blurView" destination="gwH-VL-t71" id="I2m-fn-34O"/>
+                <outlet property="btnClick" destination="7Hh-vx-noi" id="1Ny-gd-bC1"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample.jpg" width="2560" height="1600"/>
+        <image name="tick" width="128" height="128"/>
+    </resources>
+</document>

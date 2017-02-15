@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollageView" customModule="Filters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lik-wW-uqc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9S2-VF-y3U" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="174"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3IZ-yZ-jgA" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                            <rect key="frame" x="207" y="0.0" width="207" height="174"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9S2-VF-y3U" secondAttribute="bottom" id="2uP-HS-SYl"/>
+                        <constraint firstItem="3IZ-yZ-jgA" firstAttribute="leading" secondItem="9S2-VF-y3U" secondAttribute="trailing" id="MDg-e6-0rj"/>
+                        <constraint firstItem="9S2-VF-y3U" firstAttribute="top" secondItem="lik-wW-uqc" secondAttribute="top" id="Sxn-Ak-pvR"/>
+                        <constraint firstItem="3IZ-yZ-jgA" firstAttribute="height" secondItem="9S2-VF-y3U" secondAttribute="height" id="UQJ-Cn-wfn"/>
+                        <constraint firstItem="3IZ-yZ-jgA" firstAttribute="width" secondItem="9S2-VF-y3U" secondAttribute="width" id="Z4a-hk-flc"/>
+                        <constraint firstAttribute="trailing" secondItem="3IZ-yZ-jgA" secondAttribute="trailing" id="dYa-IP-Rfa"/>
+                        <constraint firstItem="3IZ-yZ-jgA" firstAttribute="top" secondItem="lik-wW-uqc" secondAttribute="top" id="o9K-B9-snT"/>
+                        <constraint firstItem="9S2-VF-y3U" firstAttribute="leading" secondItem="lik-wW-uqc" secondAttribute="leading" id="uHt-5N-iEw"/>
+                        <constraint firstAttribute="bottom" secondItem="3IZ-yZ-jgA" secondAttribute="bottom" id="zPJ-0X-Zqy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5b-0P-P5j">
+                    <rect key="frame" x="0.0" y="174" width="414" height="204"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pk5-Lh-0HF" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pk5-Lh-0HF" secondAttribute="trailing" id="Yi0-fj-9GP"/>
+                        <constraint firstAttribute="bottom" secondItem="pk5-Lh-0HF" secondAttribute="bottom" id="bKj-Gv-qPc"/>
+                        <constraint firstItem="pk5-Lh-0HF" firstAttribute="top" secondItem="c5b-0P-P5j" secondAttribute="top" id="shI-q6-yLZ"/>
+                        <constraint firstItem="pk5-Lh-0HF" firstAttribute="leading" secondItem="c5b-0P-P5j" secondAttribute="leading" id="vjQ-Q0-Yng"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-UK-OzZ">
+                    <rect key="frame" x="0.0" y="378" width="414" height="294"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-X0-KnV">
+                            <rect key="frame" x="0.0" y="0.0" width="178" height="294"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dU3-AH-jcj" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="178" height="294"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="dU3-AH-jcj" secondAttribute="bottom" id="8qx-Pz-tVf"/>
+                                <constraint firstAttribute="trailing" secondItem="dU3-AH-jcj" secondAttribute="trailing" id="TGE-g2-02V"/>
+                                <constraint firstItem="dU3-AH-jcj" firstAttribute="top" secondItem="Skk-X0-KnV" secondAttribute="top" id="jDz-7A-nNC"/>
+                                <constraint firstItem="dU3-AH-jcj" firstAttribute="leading" secondItem="Skk-X0-KnV" secondAttribute="leading" id="phz-U5-xnz"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVx-GO-ml1">
+                            <rect key="frame" x="178" y="0.0" width="132" height="294"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yVs-mq-I8e" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="132" height="117"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SPg-bc-RZx" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="117" width="132" height="177"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="SPg-bc-RZx" firstAttribute="height" secondItem="yVs-mq-I8e" secondAttribute="height" constant="60" id="9aj-b2-5Uo"/>
+                                <constraint firstItem="yVs-mq-I8e" firstAttribute="leading" secondItem="aVx-GO-ml1" secondAttribute="leading" id="MRu-ii-cjh"/>
+                                <constraint firstItem="SPg-bc-RZx" firstAttribute="width" secondItem="yVs-mq-I8e" secondAttribute="width" id="QJY-yy-vC8"/>
+                                <constraint firstItem="yVs-mq-I8e" firstAttribute="top" secondItem="aVx-GO-ml1" secondAttribute="top" id="U3R-Y2-WW5"/>
+                                <constraint firstItem="SPg-bc-RZx" firstAttribute="top" secondItem="yVs-mq-I8e" secondAttribute="bottom" id="XQa-LI-HkP"/>
+                                <constraint firstAttribute="trailing" secondItem="yVs-mq-I8e" secondAttribute="trailing" id="cne-yi-Mrm"/>
+                                <constraint firstAttribute="bottom" secondItem="SPg-bc-RZx" secondAttribute="bottom" id="n1x-QX-XZd"/>
+                                <constraint firstItem="SPg-bc-RZx" firstAttribute="leading" secondItem="aVx-GO-ml1" secondAttribute="leading" id="xeS-DX-3JG"/>
+                                <constraint firstAttribute="trailing" secondItem="SPg-bc-RZx" secondAttribute="trailing" id="xue-4u-Obj"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8FF-jT-UQh">
+                            <rect key="frame" x="310" y="0.0" width="104" height="294"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VLX-AY-mVP" customClass="CollageImageView" customModule="Filters" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="294"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="VLX-AY-mVP" firstAttribute="top" secondItem="8FF-jT-UQh" secondAttribute="top" id="cmE-br-9DW"/>
+                                <constraint firstAttribute="bottom" secondItem="VLX-AY-mVP" secondAttribute="bottom" id="efm-yc-b4v"/>
+                                <constraint firstAttribute="trailing" secondItem="VLX-AY-mVP" secondAttribute="trailing" id="rz2-cd-GsC"/>
+                                <constraint firstItem="VLX-AY-mVP" firstAttribute="leading" secondItem="8FF-jT-UQh" secondAttribute="leading" id="vu8-pg-0SP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Skk-X0-KnV" firstAttribute="top" secondItem="SsV-UK-OzZ" secondAttribute="top" id="6ee-C0-plm"/>
+                        <constraint firstItem="8FF-jT-UQh" firstAttribute="height" secondItem="Skk-X0-KnV" secondAttribute="height" id="8KB-aJ-qIk"/>
+                        <constraint firstItem="8FF-jT-UQh" firstAttribute="leading" secondItem="aVx-GO-ml1" secondAttribute="trailing" id="B0i-cm-ph0"/>
+                        <constraint firstAttribute="bottom" secondItem="Skk-X0-KnV" secondAttribute="bottom" id="B2F-dh-WCu"/>
+                        <constraint firstAttribute="bottom" secondItem="8FF-jT-UQh" secondAttribute="bottom" id="BL9-56-BA1"/>
+                        <constraint firstItem="aVx-GO-ml1" firstAttribute="width" secondItem="Skk-X0-KnV" secondAttribute="width" constant="-46" id="JtC-BU-B7F"/>
+                        <constraint firstItem="8FF-jT-UQh" firstAttribute="width" secondItem="Skk-X0-KnV" secondAttribute="width" constant="-74" id="KOf-ZU-1Th"/>
+                        <constraint firstAttribute="trailing" secondItem="8FF-jT-UQh" secondAttribute="trailing" id="RBE-nM-eEz"/>
+                        <constraint firstItem="8FF-jT-UQh" firstAttribute="top" secondItem="SsV-UK-OzZ" secondAttribute="top" id="Sve-lH-rlu"/>
+                        <constraint firstItem="aVx-GO-ml1" firstAttribute="height" secondItem="Skk-X0-KnV" secondAttribute="height" id="aAV-Yc-RlJ"/>
+                        <constraint firstItem="Skk-X0-KnV" firstAttribute="leading" secondItem="SsV-UK-OzZ" secondAttribute="leading" id="ai0-jc-F7T"/>
+                        <constraint firstAttribute="bottom" secondItem="aVx-GO-ml1" secondAttribute="bottom" id="cS8-QS-kKz"/>
+                        <constraint firstItem="aVx-GO-ml1" firstAttribute="leading" secondItem="Skk-X0-KnV" secondAttribute="trailing" id="kq1-1X-8TC"/>
+                        <constraint firstItem="aVx-GO-ml1" firstAttribute="top" secondItem="SsV-UK-OzZ" secondAttribute="top" id="tUg-DJ-cC1"/>
+                    </constraints>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMi-fj-46L">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UIn-Ob-wa2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="Myt-HU-Wgp">
+                                <rect key="frame" x="157" y="286" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ey0-tC-ksk"/>
+                                    <constraint firstAttribute="width" constant="100" id="NrC-Fb-Twd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Myt-HU-Wgp" firstAttribute="centerX" secondItem="UIn-Ob-wa2" secondAttribute="centerX" id="2PI-zP-gEN"/>
+                            <constraint firstItem="Myt-HU-Wgp" firstAttribute="centerY" secondItem="UIn-Ob-wa2" secondAttribute="centerY" id="DbD-7E-S3h"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auH-NQ-J7l">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                    <connections>
+                        <action selector="onClickSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="TpO-xX-1BQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SsV-UK-OzZ" firstAttribute="top" secondItem="c5b-0P-P5j" secondAttribute="bottom" id="0TQ-R6-GoN"/>
+                <constraint firstAttribute="trailing" secondItem="auH-NQ-J7l" secondAttribute="trailing" id="BKR-Kb-mVQ"/>
+                <constraint firstAttribute="trailing" secondItem="SsV-UK-OzZ" secondAttribute="trailing" id="Hi6-4D-mi1"/>
+                <constraint firstAttribute="bottom" secondItem="auH-NQ-J7l" secondAttribute="bottom" id="I2c-jP-kgT"/>
+                <constraint firstItem="c5b-0P-P5j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JGD-VK-wJf"/>
+                <constraint firstAttribute="trailing" secondItem="LMi-fj-46L" secondAttribute="trailing" id="PBd-YF-lLz"/>
+                <constraint firstItem="LMi-fj-46L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UJb-z5-GKX"/>
+                <constraint firstItem="c5b-0P-P5j" firstAttribute="height" secondItem="lik-wW-uqc" secondAttribute="height" constant="30" id="Yh2-Z5-6m9"/>
+                <constraint firstAttribute="trailing" secondItem="lik-wW-uqc" secondAttribute="trailing" id="ZE6-K3-nVz"/>
+                <constraint firstItem="LMi-fj-46L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zyl-nh-grf"/>
+                <constraint firstAttribute="bottom" secondItem="LMi-fj-46L" secondAttribute="bottom" id="fxG-A4-HEE"/>
+                <constraint firstItem="SsV-UK-OzZ" firstAttribute="height" secondItem="lik-wW-uqc" secondAttribute="height" constant="120" id="lGl-Cy-qoo"/>
+                <constraint firstAttribute="trailing" secondItem="c5b-0P-P5j" secondAttribute="trailing" id="lLh-0E-SLQ"/>
+                <constraint firstItem="lik-wW-uqc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lWJ-y6-qyA"/>
+                <constraint firstItem="SsV-UK-OzZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mnP-2V-Umi"/>
+                <constraint firstItem="c5b-0P-P5j" firstAttribute="top" secondItem="lik-wW-uqc" secondAttribute="bottom" id="nf1-lS-sAS"/>
+                <constraint firstItem="auH-NQ-J7l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qKh-6s-zkx"/>
+                <constraint firstItem="auH-NQ-J7l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="riI-u1-xXp"/>
+                <constraint firstItem="lik-wW-uqc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rqK-Yh-Tu7"/>
+                <constraint firstAttribute="bottom" secondItem="SsV-UK-OzZ" secondAttribute="bottom" id="vYJ-iN-UBK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="collageType">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="blurView" destination="LMi-fj-46L" id="SWz-hI-BBK"/>
+                <outlet property="btnClick" destination="auH-NQ-J7l" id="Y0J-HT-Vqk"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="sample.jpg" width="2560" height="1600"/>
+        <image name="tick" width="170" height="170"/>
+    </resources>
+</document>
