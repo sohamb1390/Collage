@@ -7,4 +7,3 @@ Choose a frame
 Select photos from the Photos Library
 Proceed to check your final collage
 Save it to your Photos Library
-![alt tag](Collage/Collage/Screenshots/Simulator Screen Shot 16-Feb-2017, 6.58.47 PM.png "screenshot")
